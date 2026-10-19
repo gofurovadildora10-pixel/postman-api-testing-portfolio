@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "b04ecf2e-80db-45bc-965b-691d0db4b4e6",
+		"name": "News API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "59036717",
+		"_collection_link": "https://gofurovadildora10-3190477.postman.co/workspace/Dildora-G'ofurova's-Workspace~fe797078-2aa7-4a52-882c-8dbff49045d7/collection/59036717-b04ecf2e-80db-45bc-965b-691d0db4b4e6?action=share&source=collection_link&creator=59036717"
+	},
+	"item": [
+		{
+			"name": "1 - LInux News",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Development RU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Development&language=ru&from=2026-10-04",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Development"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						},
+						{
+							"key": "from",
+							"value": "2026-10-04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Linux Page 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "[https://newsapi.org/v2/everything](https://newsapi.org/v2/everything)?q=Linux&language=ru&pageSize=10&page=3",
+					"protocol": "[https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything](https:",
+						"",
+						"newsapi.org",
+						"v2",
+						"everything)"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Linux"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Science Headlines RU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "[https://newsapi.org/v2/top-headlines](https://newsapi.org/v2/top-headlines)?category=science&language=ru",
+					"protocol": "[https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines](https:",
+						"",
+						"newsapi.org",
+						"v2",
+						"top-headlines)"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "science"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "ef46e0bb56224fd1800b69db2ded0101",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

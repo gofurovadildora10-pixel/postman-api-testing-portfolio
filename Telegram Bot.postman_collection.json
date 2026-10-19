@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "8aeb20e8-297f-46ce-96d6-f2edf1ad2aa8",
+		"name": "Telegram Bot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "59036717",
+		"_collection_link": "https://gofurovadildora10-3190477.postman.co/workspace/Dildora-G'ofurova's-Workspace~fe797078-2aa7-4a52-882c-8dbff49045d7/collection/59036717-8aeb20e8-297f-46ce-96d6-f2edf1ad2aa8?action=share&source=collection_link&creator=59036717"
+	},
+	"item": [
+		{
+			"name": "1 - Get Me",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot{{bot_token}}/getMe",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{bot_token}}",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Get Updates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot{{bot_token}}/getUpdates",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{bot_token}}",
+						"getUpdates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Send Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"chat_id\": 7016254593,\n  \"text\": \"Salom! Bu Postman orqali yuborilgan birinchi xabar 🚀\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot{{bot_token}}/sendMessage",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{bot_token}}",
+						"sendMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "bot_token",
+			"value": ""
+		}
+	]
+}
